@@ -16,13 +16,18 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class RibbonConsumerApplication {
 
+    @Autowired
+    public RibbonConsumerApplication(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
+
     @Bean
     @LoadBalanced
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
 
-    @Autowired
+    final
     RestTemplate restTemplate;
 
     @RequestMapping(value = "/ribbon-consumer", method = RequestMethod.GET)
