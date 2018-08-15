@@ -33,6 +33,8 @@ dependencies {
     compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-devtools')
+    compile group: 'com.didispace', name: 'hello-service-api', version: '1.0-SNAPSHOT'
 }
 
 dependencyManagement {

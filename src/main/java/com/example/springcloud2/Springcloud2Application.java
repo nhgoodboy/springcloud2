@@ -11,4 +11,5 @@ public class Springcloud2Application {
     public static void main(String[] args) {
         SpringApplication.run(Springcloud2Application.class, args);
     }
+
 }

@@ -11,6 +11,7 @@ public class Springcloud2ApplicationTests {
 
     @Test
     public void contextLoads() {
+
     }
 
 }
